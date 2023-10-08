@@ -80,31 +80,21 @@ const uploadPage = () => {
     return (
         <div className="bg-primary min-h-screen text-quaternary">
             <Head>
-                <title>Thermastore</title>
+                <title>ThimiCloud</title>
             </Head>
             <div className="bg-secondary">
                 <div className="grid items-center max-w-[1000px] m-auto px-4 gap-4 py-[72px]">
                     <div className="pt-16 pb-8">
-                        <h1 className="text-center font-bold text-4xl">Thermastore</h1>
-                        <p className="text-center">Fast, free, unlimited cloud storage</p>
+                        <h1 className="text-center font-bold text-4xl">ThimiCloud</h1>
+                        <p className="text-center">รวดเร็ว, ฟรี, ไม่จำกัดขนาดไฟล์</p>
                     </div>
-                    <div className="overflow-hidden flex justify-center">
-                        <Carousel>
-                            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
-                                <h2 className="text-center text-2xl font-bold mb-4">Free</h2>
-                                <p className="text-center">This is a completely free and <Link className="hover:text-tertiary transition-colors underline" href="https://github.com/Zeptosec/Thermastore">open source</Link> project!</p>
-                            </div>
                             <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
                                 <h2 className="text-center text-2xl font-bold mb-4">Fast</h2>
-                                <p className="text-center">High upload and download speeds. Upload files in no time!</p>
+                                <p className="text-center">อัพโหลดด้วยความเร็วสูง!</p>
                             </div>
                             <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
                                 <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
-                                <p className="text-center">Watch videos, listen to audio, preview images directly from website without downloading!</p>
-                            </div>
-                            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
-                                <h2 className="text-center text-2xl font-bold mb-4">Secure</h2>
-                                <p className="text-center">Keep your files directly on your discord server. So that they are only accessible to you and to everyone you share the link to.</p>
+                                <p className="text-center">สามารถดูคลิปวีดีโอและเพลงภายในเว็ปได้เลยโดยที่ไม่จำเป็นต้องดาวห์โหลด!</p>
                             </div>
                         </Carousel>
                     </div>
@@ -116,13 +106,13 @@ const uploadPage = () => {
                 </svg>
             </div>
             <div className="relative bg-primary">
-                <h2 className="text-2xl z-50 font-bold text-center">Start uploading now!</h2>
+                <h2 className="text-2xl z-50 font-bold text-center">เริ่มอัพโหลด!</h2>
             </div>
             <div className="grid mt-12 pb-24 bg-primary items-center max-w-[800px] m-auto px-4 gap-4">
                 <div className="grid gap-4">
                     <div className={styles.upload}>
                         <DropComp filesChanged={handleChange} files={previewFiles} remove={removeFile} />
-                        {previewFiles.length > 0 ? <CoolButton onClick={startUpload}>UPLOAD</CoolButton> : ""}
+                        {previewFiles.length > 0 ? <CoolButton onClick={startUpload}>อัพโหลด</CoolButton> : ""}
                         {error.length > 0 ? <h2 className=" text-tertiary font-semibold text-xl text-center">{error}</h2> : ""}
                     </div>
                     {fm && fm.state.uploading.length > 0 ?
