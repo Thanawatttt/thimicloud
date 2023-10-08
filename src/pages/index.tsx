@@ -78,26 +78,28 @@ const uploadPage = () => {
     }
 
     return (
-        <div className="bg-primary min-h-screen text-quaternary">
-            <Head>
-                <title>ThimiCloud</title>
-            </Head>
-            <div className="bg-secondary">
-                <div className="grid items-center max-w-[1000px] m-auto px-4 gap-4 py-[72px]">
-                    <div className="pt-16 pb-8">
-                        <h1 className="text-center font-bold text-4xl">ThimiCloud</h1>
-                        <p className="text-center">รวดเร็ว, ฟรี, ไม่จำกัดขนาดไฟล์</p>
-                    </div>
-                            <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
-                                <h2 className="text-center text-2xl font-bold mb-4">Fast</h2>
-                                <p className="text-center">อัพโหลดด้วยความเร็วสูง!</p>
-                            </div>
-                            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
-                                <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
-                                <p className="text-center">สามารถดูคลิปวีดีโอและเพลงภายในเว็ปได้เลยโดยที่ไม่จำเป็นต้องดาวห์โหลด!</p>
-                            </div>
-                        </div>
-                        </Carousel>
+<div className="bg-primary min-h-screen text-quaternary">
+    <Head>
+        <title>ThimiCloud</title>
+    </Head>
+    <div className="bg-secondary">
+        <div className="grid items-center max-w-[1000px] m-auto px-4 gap-4 py-[72px]">
+            <div className="pt-16 pb-8">
+                <h1 className="text-center font-bold text-4xl">ThimiCloud</h1>
+                <p className="text-center">รวดเร็ว, ฟรี, ไม่จำกัดขนาดไฟล์</p>
+            </div>
+            <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
+                <h2 className="text-center text-2xl font-bold mb-4">Fast</h2>
+                <p className="text-center">อัพโหลดด้วยความเร็วสูง!</p>
+            </div>
+            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
+                <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
+                <p className="text-center">สามารถดูคลิปวีดีโอและเพลงภายในเว็ปได้เลยโดยที่ไม่จำเป็นต้องดาวห์โหลด!</p>
+            </div>
+        </div>
+    </div>
+    <Carousel />
+</div>
                     </div>
                 </div>
             </div>
