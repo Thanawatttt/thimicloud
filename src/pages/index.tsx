@@ -78,28 +78,32 @@ const uploadPage = () => {
     }
 
     return (
-<div className="bg-primary min-h-screen text-quaternary">
-    <Head>
-        <title>ThimiCloud</title>
-    </Head>
-    <div className="bg-secondary">
-        <div className="grid items-center max-w-[1000px] m-auto px-4 gap-4 py-[72px]">
-            <div className="pt-16 pb-8">
-                <h1 className="text-center font-bold text-4xl">ThimiCloud</h1>
-                <p className="text-center">รวดเร็ว, ฟรี, ไม่จำกัดขนาดไฟล์</p>
-            </div>
-            <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
-                <h2 className="text-center text-2xl font-bold mb-4">Fast</h2>
-                <p className="text-center">อัพโหลดด้วยความเร็วสูง!</p>
-            </div>
-            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
-                <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
-                <p className="text-center">สามารถดูคลิปวีดีโอและเพลงภายในเว็ปได้เลยโดยที่ไม่จำเป็นต้องดาวห์โหลด!</p>
-            </div>
-        </div>
-    </div>
-    <Carousel />
-</div>
+        <div className="bg-primary min-h-screen text-quaternary">
+            <Head>
+                <title>ThimiCloud</title>
+            </Head>
+            <div className="bg-secondary">
+                <div className="grid items-center max-w-[1000px] m-auto px-4 gap-4 py-[72px]">
+                    <div className="pt-16 pb-8">
+                        <h1 className="text-center font-bold text-4xl">ThimiCloud</h1>
+                        <p className="text-center">เร็ว, ฟรี, เก็บไฟล์ได้โดยไม่จำกัดขนาดไฟล์</p>
+                    </div>
+                    <div className="overflow-hidden flex justify-center">
+                        <Carousel>
+                            </div>
+                            <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
+                                <h2 className="text-center text-2xl font-bold mb-4">รวดเร็ว</h2>
+                                <p className="text-center">อัพโหลดด้วยความเร็วสูง!</p>
+                            </div>
+                            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
+                                <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
+                                <p className="text-center">สามารถเล่นไฟล์เสียง, วีดีโอ, โดยไม่จำเป็นต้องดาวโหลด!</p>
+                            </div>
+                            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
+                                <h2 className="text-center text-2xl font-bold mb-4">ปลอดภัย</h2>
+                                <p className="text-center">ThimiCloud มีการเข้ารหัสไฟล์ต่างที่คุณอัพโหลด ใว้ใจเราได้เลย!</p>
+                            </div>
+                        </Carousel>
                     </div>
                 </div>
             </div>
@@ -109,13 +113,13 @@ const uploadPage = () => {
                 </svg>
             </div>
             <div className="relative bg-primary">
-                <h2 className="text-2xl z-50 font-bold text-center">เริ่มอัพโหลด!</h2>
+                <h2 className="text-2xl z-50 font-bold text-center">Start uploading now!</h2>
             </div>
             <div className="grid mt-12 pb-24 bg-primary items-center max-w-[800px] m-auto px-4 gap-4">
                 <div className="grid gap-4">
                     <div className={styles.upload}>
                         <DropComp filesChanged={handleChange} files={previewFiles} remove={removeFile} />
-                        {previewFiles.length > 0 ? <CoolButton onClick={startUpload}>อัพโหลด</CoolButton> : ""}
+                        {previewFiles.length > 0 ? <CoolButton onClick={startUpload}>UPLOAD</CoolButton> : ""}
                         {error.length > 0 ? <h2 className=" text-tertiary font-semibold text-xl text-center">{error}</h2> : ""}
                     </div>
                     {fm && fm.state.uploading.length > 0 ?
