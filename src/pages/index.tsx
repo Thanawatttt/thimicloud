@@ -89,7 +89,6 @@ const uploadPage = () => {
                         <p className="text-center">เร็ว, ฟรี, เก็บไฟล์ได้โดยไม่จำกัดขนาดไฟล์</p>
                     </div>
                     <div className="overflow-hidden flex justify-center">
-                    </Carousel>
                             </div>
                             <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
                                 <h2 className="text-center text-2xl font-bold mb-4">รวดเร็ว</h2>
