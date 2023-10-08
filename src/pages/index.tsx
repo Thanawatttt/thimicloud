@@ -116,13 +116,13 @@ const uploadPage = () => {
                 </svg>
             </div>
             <div className="relative bg-primary">
-                <h2 className="text-2xl z-50 font-bold text-center">Start uploading now!</h2>
+                <h2 className="text-2xl z-50 font-bold text-center">เริ่มอัพโหลดเลย!</h2>
             </div>
             <div className="grid mt-12 pb-24 bg-primary items-center max-w-[800px] m-auto px-4 gap-4">
                 <div className="grid gap-4">
                     <div className={styles.upload}>
                         <DropComp filesChanged={handleChange} files={previewFiles} remove={removeFile} />
-                        {previewFiles.length > 0 ? <CoolButton onClick={startUpload}>UPLOAD</CoolButton> : ""}
+                        {previewFiles.length > 0 ? <CoolButton onClick={startUpload}>อัพโหลด</CoolButton> : ""}
                         {error.length > 0 ? <h2 className=" text-tertiary font-semibold text-xl text-center">{error}</h2> : ""}
                     </div>
                     {fm && fm.state.uploading.length > 0 ?
