@@ -51,7 +51,7 @@ export default function navbar() {
           <div className='inline-flex items-center p-2 gap-2'>
             <IconCloud className="" width={30} colorClass="quaternary" />
             <span className=' text-xl font-bold uppercase tracking-wide'>
-              Thermastore
+              ThimiCloud
             </span>
           </div>
         </Link>
