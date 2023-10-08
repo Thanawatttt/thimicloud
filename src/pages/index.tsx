@@ -96,6 +96,7 @@ const uploadPage = () => {
                                 <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
                                 <p className="text-center">สามารถดูคลิปวีดีโอและเพลงภายในเว็ปได้เลยโดยที่ไม่จำเป็นต้องดาวห์โหลด!</p>
                             </div>
+                        </div>
                         </Carousel>
                     </div>
                 </div>
