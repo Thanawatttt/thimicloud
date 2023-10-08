@@ -89,18 +89,22 @@ const uploadPage = () => {
                         <p className="text-center">เร็ว, ฟรี, เก็บไฟล์ได้โดยไม่จำกัดขนาดไฟล์</p>
                     </div>
                     <div className="overflow-hidden flex justify-center">
+                        <Carousel>
+                            <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
+                                <h2 className="text-center text-2xl font-bold mb-4">ฟรี</h2>
+                                <p className="text-center">สามารถใช้งานได้ฟรีโดยไม่จำกัดความเร็ว!</p>
                             </div>
                             <div className=" min-w-[215px] max-w-[215px] sm:w-[35vw] bg-primary rounded-xl p-2">
-                                <h2 className="text-center text-2xl font-bold mb-4">รวดเร็ว</h2>
-                                <p className="text-center">อัพโหลดด้วยความเร็วสูง!</p>
+                                <h2 className="text-center text-2xl font-bold mb-4">Fast</h2>
+                                <p className="text-center">อัพโหลดด้วยความเร็วสูง!!</p>
                             </div>
                             <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
                                 <h2 className="text-center text-2xl font-bold mb-4">Playback</h2>
-                                <p className="text-center">สามารถเล่นไฟล์เสียง, วีดีโอ, โดยไม่จำเป็นต้องดาวโหลด!</p>
+                                <p className="text-center">ดูวีดีโอ หรือ เล่นเสียงได้โดยไม่จำเป็นต้องดาวโหลด!</p>
                             </div>
                             <div className=" min-w-[215px] max-w-[215px] bg-primary rounded-xl p-2">
                                 <h2 className="text-center text-2xl font-bold mb-4">ปลอดภัย</h2>
-                                <p className="text-center">ThimiCloud มีการเข้ารหัสไฟล์ต่างที่คุณอัพโหลด ใว้ใจเราได้เลย!</p>
+                                <p className="text-center">ไร้กังวล! ไฟล์ของคุณจะถูกเข้ารหัสไฟล์ใว้</p>
                             </div>
                         </Carousel>
                     </div>
