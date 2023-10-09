@@ -16,7 +16,7 @@ export default function downloadPage() {
     const { fid, cid } = router.query;
     const [loading, setLoading] = useState(true);
     const [loadError, setLoadError] = useState("");
-    const [fData, setFdata] = useState<DownloadStatus>({ started_at: 0, name: "", size: -1, chunks: [], downloadedBytes: 0, speed: 0, timeleft: 0, precentage: 0, channel_id: "1025526944776867952" });
+    const [fData, setFdata] = useState<DownloadStatus>({ started_at: 0, name: "", size: -1, chunks: [], downloadedBytes: 0, speed: 0, timeleft: 0, precentage: 0, channel_id: "1160636706433794130" });
     const fm = useFileManager();
 
     useEffect(() => {
