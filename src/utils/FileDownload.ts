@@ -366,4 +366,4 @@ export async function downloadFile(file: DownloadStatus, endPoints: Endpoint[], 
         file.finished = true;
     }
     downloadBlob(dwnFile, file.name);
-}
+            }
